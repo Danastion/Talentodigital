@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+.row1, .row2, .row3, .row4, .row5 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.negro, .negro2, .negro3, .amarillo, .amarillo2, .amarillo3, .azul1, .azul2, .azul3, .verde{
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.negro, .negro2, .negro3{
+    background-color: rgb(0, 0, 0);
+}
+
+.amarillo, .amarillo2, .amarillo3{
+    background-color: rgba(151, 149, 3, 0.884);
+}
+
+.azul1, .azul2, .azul3{
+    background-color: rgb(0, 25, 253);
+}
+
+.verde{
+    background-color: rgba(1, 145, 25, 0.836);
+}
+
+
+@media (min-width: 400px) and (max-width: 700px)
+    {
+    .row1 { flex-wrap: wrap;width: 100%; }
+
+     .row2{
+         flex-direction: row;
+     }
+     .negro2, .negro3 {
+        width: 50%;
+     }
+       
+    .row3{flex-wrap: wrap; }
+
+     .amarillo { width: 50%; align-self: center;}
+
+     .amarillo2 { width: 75%; align-self: flex-end;}
+
+     .amarillo3 { width: 75%; align-self: flex-start;}
+
+     .row4{ flex-wrap: wrap; }
+
+     .azul1{  width: 50%; align-self: flex-start;}
+
+     .azul3{ width: 50%; align-self: flex-end;}
+
+     .row5{
+        flex-wrap: nowrap;
+     }
+    .verde{
+        width: 30%;
+        align-self: center;
+        }
+    }
+
+
+    @media (min-width: 701px) {
+
+     }
+       
+    
+
+     
+
+    }

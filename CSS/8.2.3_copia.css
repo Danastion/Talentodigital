@@ -1,0 +1,77 @@
+.contenedor1, .contenedor2, .contenedor3, .contenedor4 {
+    width: 100%;
+    background: white;
+    border: 1 px solid #000000;  
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja{
+    width: 100%;
+    border: 1 px solid #000000;  
+
+}
+
+.negro1, .negro2, .negro3 {
+    background-color: black;  
+    color: white;
+    border: 1 px solid #000000;    
+}
+
+.amarillo1, .amarillo2, .amarillo3 {
+    background-color:  yellow;  
+    color: black;  
+    border: 1 px solid #000000;  
+}
+
+.azul1, .azul2, .azul3{
+    background-color: blue;  
+    color: black;  
+    border: 1 px solid #000000;  
+}
+
+.verde{
+    background-color: green;  
+    color: black;  
+    border: 1 px solid #000000;  
+}
+
+
+
+@media (min-width: 201px) and (max-width: 700px){
+    .negro2, .negro3{ width: 50%;}
+
+    .contenedor2, .contenedor3 { flex-direction: column;}
+
+    .contenedor4 { justify-content: center;}
+
+    .amarillo1{ width: 50%; align-self: center;}
+    .amarillo2{ width: 75%; align-self: flex-end;}
+    .amarillo3{ width: 50%; align-self: flex-start;}
+
+    .azul1{ width: 50%; align-self: flex-start;}
+    .azul3{ width: 50%; align-self: flex-end;}
+
+    .verde { width: 20%;}
+}
+
+@media (min-width: 701px) 
+{
+    .contenedor1 { flex-direction: row;}
+
+    .negro1 { width: 20%; order: 2;}
+    .negro2 { width: 20%; order:1;}
+    .negro3{ width: 60%;}
+
+    .contenedor2 { flex-direction: column;}
+    .amarillo2 { width: 60%; align-self: flex-end;}
+    .amarillo3 { width: 60%; align-self: flex-start;}
+
+    .contenedor3 { flex-direction: row;}
+    .azul1{ width: 50%;}
+    .azul2{ width: 50%;}
+
+    .contenedor4 { justify-content: flex-end;}
+    .verde { width: 40%;}
+}

@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width:100%;
+}
+
+.foto{
+    width: 100%;
+}
+
+.galeria{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+
+@media (min-width: 500px) and (max-width: 750px){
+    .foto{
+        width: 50%;
+    }
+}
+
+@media (min-width: 751px){
+    .row{
+        flex-wrap: nowrap;
+    }
+}

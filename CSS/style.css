@@ -1,0 +1,30 @@
+.contenedor{
+    display: flex;    
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+}
+
+h1  {
+    text-align: center;
+}
+
+.item{
+    /* justify-content: space-evenly */
+    text-align: center;    
+    width: 300px;
+    border: 1px solid black;
+}
+
+img {
+    width: 50%;
+}
+
+@media (min-width: 400px) and (max-width: 700px){
+.contenedor{
+    /* justify-content: space-evenly;
+    flex-wrap: nowrap; */
+    width: 800px;    
+}
+}
+
+   
